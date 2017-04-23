@@ -1,0 +1,488 @@
+.btn-trendy-pink {
+  $btn-color: $mm-white;
+  $btn-background: $mm-trendy-pink;
+  $btn-border: lighten($mm-trendy-pink, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-dark-trendy-pink {
+  $btn-color: $mm-white;
+  $btn-background: $mm-trendy-pink-dark;
+  $btn-border: lighten($mm-trendy-pink-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-darker-trendy-pink {
+  $btn-color: $mm-white;
+  $btn-background: $mm-trendy-pink-darker;
+  $btn-border: lighten($mm-trendy-pink-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-elm {
+  $btn-color: $mm-white;
+  $btn-background: $mm-elm;
+  $btn-border: lighten($mm-elm, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-dark-elm {
+  $btn-color: $mm-white;
+  $btn-background: $mm-elm-dark;
+  $btn-border: lighten($mm-elm-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-darker-elm {
+  $btn-color: $mm-white;
+  $btn-background: $mm-elm-darker;
+  $btn-border: lighten($mm-elm-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-dark-gold {
+  $btn-color: $mm-white;
+  $btn-background: $mm-gold-dark;
+  $btn-border: lighten($mm-gold-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-darker-gold {
+  $btn-color: $mm-white;
+  $btn-background: $mm-gold-darker;
+  $btn-border: lighten($mm-gold-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-gold {
+  $btn-color: $mm-white;
+  $btn-background: $mm-gold;
+  $btn-border: lighten($mm-gold, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-dark-purple {
+  $btn-color: $mm-white;
+  $btn-background: $mm-purple-dark;
+  $btn-border: lighten($mm-purple-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-darker-purple {
+  $btn-color: $mm-white;
+  $btn-background: $mm-purple-darker;
+  $btn-border: lighten($mm-purple-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-purple {
+  $btn-color: $mm-white;
+  $btn-background: $mm-purple;
+  $btn-border: lighten($mm-purple, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-pink {
+  $btn-color: $mm-white;
+  $btn-background: $mm-pink;
+  $btn-border: lighten($mm-pink, 7%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-pink-gray {
+  $btn-color: $mm-pink;
+  $btn-background: $mm-white;
+  $btn-border: lighten($mm-gray8, 7%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-green {
+  $btn-color: $mm-white;
+  $btn-background: $mm-green;
+  $btn-border: lighten($mm-green, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-dark-green {
+  $btn-color: $mm-white;
+  $btn-background: $mm-green-dark;
+  $btn-border: lighten($mm-green-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-dark-blue {
+  $btn-color: $mm-white;
+  $btn-background: $mm-blue-dark;
+  $btn-border: lighten($mm-blue-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-darker-blue {
+  $btn-color: $mm-white;
+  $btn-background: $mm-blue-darker;
+  $btn-border: lighten($mm-blue-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-dark-gray {
+  $btn-color: $mm-white;
+  $btn-background: $mm-gray-dark;
+  $btn-border: lighten($mm-gray-dark, 7%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-lighter-gray {
+  $btn-color: $mm-black;
+  $btn-background: $mm-gray-lighter;
+  $btn-border: darken($mm-gray-lighter, 7%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-clear {
+  $bluish-gray: $mm-blue-green4;
+  $btn-color: $mm-white;
+  $btn-background: $bluish-gray;
+  $btn-border: darken($bluish-gray, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-white {
+  $btn-color: $mm-black;
+  $btn-background: $mm-white;
+  $btn-border: darken($mm-gray-lighter, 7%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+  font-weight: bold;
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-ghost-white {
+  $btn-color: $mm-white;
+  $btn-background: transparent;
+  $btn-border: $mm-white;
+  @include button-variant($btn-color, $btn-background, $btn-border);
+
+  @include mm-btn-pending-animation($btn-background);
+}
+
+.btn-white-pink {
+  color: $mm-pink;
+  background: $mm-white;
+  font-weight: bold;
+  &:hover {
+    color: $mm-pink;
+    background-color: $mm-white;
+    border: 1px solid $mm-pink;
+  }
+  &:focus {
+    color: $mm-pink;
+  }
+  &.active {
+    &:hover {
+      color: $mm-white;
+      background-color: $mm-pink;
+    }
+    color: $mm-white;
+    background-color: $mm-pink;
+    border-color: $mm-pink;
+  }
+
+  @include mm-btn-pending-animation($mm-pink);
+}
+
+.btn-white-gray-pink {
+  color: $mm-pink;
+  background: $mm-white;
+  border: 1px solid $mm-gray5;
+  font-weight: bold;
+  &:hover {
+    color: $mm-pink;
+    background-color: $mm-white;
+    border: 1px solid $mm-pink;
+  }
+  &:focus {
+    color: $mm-pink;
+  }
+  &.active {
+    &:hover {
+      color: $mm-white;
+      background-color: $mm-pink;
+    }
+    color: $mm-white;
+    background-color: $mm-pink;
+    border-color: $mm-pink;
+  }
+
+  @include mm-btn-pending-animation($mm-pink);
+}
+
+// Sometimes you can't add a new class to your markup. When that happens,
+// @include the mixin below to an already-added class.
+@mixin pink-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-pink;
+  $btn-border: darken($mm-pink, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin purple-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-purple;
+  $btn-border: darken($mm-purple, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin dark-purple-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-purple-dark;
+  $btn-border: darken($mm-purple-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin darker-purple-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-purple-darker;
+  $btn-border: darken($mm-purple-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin dark-blue-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-blue-dark;
+  $btn-border: darken($mm-blue-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin darker-blue-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-blue-darker;
+  $btn-border: darken($mm-blue-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin gold-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-gold;
+  $btn-border: darken($mm-gold, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin dark-gold-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-gold-dark;
+  $btn-border: darken($mm-gold-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin darker-gold-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-gold-darker;
+  $btn-border: darken($mm-gold-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin elm-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-elm;
+  $btn-border: darken($mm-elm, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin dark-elm-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-elm-dark;
+  $btn-border: darken($mm-elm-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin darker-elm-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-elm-darker;
+  $btn-border: darken($mm-elm-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin trendy-pink-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-trendy-pink;
+  $btn-border: darken($mm-trendy-pink, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin dark-trendy-pink-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-trendy-pink-dark;
+  $btn-border: darken($mm-trendy-pink-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin darker-trendy-pink-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-trendy-pink-darker;
+  $btn-border: darken($mm-trendy-pink-darker, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin green-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-green;
+  $btn-border: darken($mm-green, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+@mixin dark-green-button {
+  $btn-color: $mm-white;
+  $btn-background: $mm-green-dark;
+  $btn-border: darken($mm-green-dark, 5%);
+  @include button-variant($btn-color, $btn-background, $btn-border);
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  &.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+  }
+  &.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+  }
+}
+
+.btn-input-default {
+  color: $mm-gray-dark;
+  background-color: $mm-white;
+  border-color: $mm-gray8;
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    color: $mm-gray8;
+    background-color: $mm-gray-lighter;
+  }
+  &:active, &.active {
+    color: $mm-gray-dark;
+    background-color: $mm-gray7;
+    border-color: $mm-gray2;
+  }
+}
+
+//button link variations
+@mixin button-link-variation($color) {
+  color: $color;
+
+  &:focus {
+    color: $color;
+  }
+
+  &:hover,
+  &:active {
+    color: darken($color, 15%);
+  }
+
+  &[disabled] {
+    color: lighten($color, 35.7%);
+    &:hover,
+    &:focus {
+      color: lighten($color, 35.7%);
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-link-pink {
+  @include button-link-variation($mm-pink);
+}
+
+.btn-link-black {
+  @include button-link-variation($mm-gray-dark);
+}
+
+.btn-link-gray {
+  @include button-link-variation($mm-gray);
+}
+
+.btn-link-gray-light {
+  @include button-link-variation($mm-gray-light);
+}
+
+.btn-group > .btn-group:first-child:not(:last-child) .btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

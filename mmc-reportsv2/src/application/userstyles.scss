@@ -1,0 +1,148 @@
+.user-admin {
+  padding-top: 75px;
+
+  .empty-message {
+    color: $mm-gray2;
+  }
+
+  input.btn-warning,
+  input.btn-default {
+    outline: none;
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  label {
+    font-weight: normal;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  .panel {
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    text-align: right;
+  }
+
+  &__group-label {
+    background-color: $mm-green1;
+    user-select: none;
+  }
+
+  &__group-label--hoverable {
+    &:hover {
+      background-color: darken($mm-green1, 5%);
+      cursor: pointer;
+    }
+  }
+
+  &__role-label {
+    background-color: $mm-trendy-pink1;
+  }
+
+  .panel-body {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+    > .row {
+      margin-bottom: 15px;
+    }
+
+    .label {
+      font-size: 100%;
+      font-weight: normal;
+
+      &-wrapper {
+        display: inline-block;
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .alert {
+    margin-bottom: 10px;
+  }
+
+  &__label-row {
+    line-height: 2.25;
+  }
+
+  &__change-password-form {
+    .modal {
+      &-header {
+        padding-bottom: 0;
+      }
+      &-body   {
+        padding-top: 0;
+      }
+
+      &-header,
+      &-footer {
+        border: none;
+      }
+
+      &-footer {
+        padding-bottom: 30px;
+
+        > .form-group {
+          margin-bottom: 0;
+        }
+      }
+
+      .required {
+        //color: $brand-danger;
+        font-size: 1.2em;
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+      }
+
+      .password-info {
+        margin-top: 7px;
+        color: $mm-gray-light;
+        font-size: 13px;
+      }
+    }
+
+    .alert {
+      margin-bottom: 10px;
+    }
+  }
+
+  .btn-expire {
+    //@include button-variant($mm-white, $mm-orange1, darken($mm-orange1, 5%));
+  }
+
+  &__expire-password {
+    padding-top: 15px;
+    //border-top: dashed 3px $gray-lighter;
+  }
+
+  .subscriptions-table {
+    table tr {
+      td:first-child {
+        width: 5%;
+      }
+      td:last-child {
+        width: 20%;
+        span {
+          width: 45%;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.no-bottom-margin {
+  margin-bottom: 0;
+}

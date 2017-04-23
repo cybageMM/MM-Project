@@ -1,0 +1,129 @@
+//== Font sizes for the application
+//
+$mm-sub-title:    22px;
+$mm-font-x-small: 10px;
+$mm-font-small:   12px;
+
+//== Mediamorph colors for the application
+//
+$mm-blue-light:    #c9e8f7;
+$mm-blue:          #0277bd;
+$mm-blue1:         #1fa5cd;
+$mm-blue2:         #66AFE9;
+$mm-blue-dark:     #01599e;
+$mm-blue-darker:   #014982;
+$mm-orange:        #f0ad4e;
+$mm-orange1:       #ffa000;
+$mm-pink-lighter:  #ffeff9;
+$mm-pink-light:    #ff069a;
+$mm-pink-1:        #ffe4ec;
+$mm-pink-2:        #ae0068;
+$mm-pink-3:        #fff5f8;
+$mm-pink-4:        #fff0f9;
+$mm-pink-5:        #ffd6ee;
+$mm-pink-6:        #b5008c;
+$mm-pink:          #e10086;
+$mm-pink-highlight:#ff48b5;
+$mm-blue-green:    #3aaab4;
+$mm-blue-green1:   #1b87a6;
+$mm-blue-green2:   #7ba6aa;
+$mm-blue-green3:   #d9f1f3;
+$mm-blue-green4:   #becad1;
+$mm-green:         #27896b;
+$mm-green1:        #33a58c;
+$mm-green2:        #dff0d8;
+$mm-green-dark:    #217159;
+$mm-yellow-green:  #a5ae72;
+$mm-white:           white;
+$mm-black:           black;
+$mm-black2:        #666666;
+$mm-purple:        #605cb1;
+$mm-purple-dark:   #524daa;
+$mm-purple-darker: #3e399c;
+$mm-gold:          #c8bc5a;
+$mm-gold1:         #cab856;
+$mm-gold-dark:     #aaa04d;
+$mm-gold-darker:   #908840;
+$mm-brown:         #8a6d3b;
+$mm-red:           #a94442;
+$mm-red1:          #bfa1a1;
+$mm-red2:          #d9534f;
+$mm-red3:          #dd0000;
+$mm-red4:          #683243;
+$mm-elm:           #25919A;
+$mm-elm-dark:      #1C7F87;
+$mm-elm-darker:    #1B6B72;
+$mm-trendy-pink:           #8C5C98;
+$mm-trendy-pink1:          #a659c6;
+$mm-trendy-pink2:          #c54abe;
+$mm-trendy-pink3:          #a659c6;
+$mm-trendy-pink-dark:      #7D4F89;
+$mm-trendy-pink-darker:    #653671;
+// Mediamorph gray.
+$mm-gray-lighter:  #eee;
+$mm-gray-light:    #777;
+$mm-gray:          #555;
+$mm-gray2:         #999;
+$mm-gray3:         #f9f9f9;
+$mm-gray5:         #ddd;
+$mm-gray7:         #e8e8e8; // Table Header
+$mm-gray8:         #ccc;
+$mm-gray9:         #f4f4f4; // Select2 gray background for disabled input
+$mm-gray-dark:     #333;
+
+// Mediamorph pastels.
+$mm-pastel-blue: rgb(165,221,226); // #a5dde2
+$mm-pastel-cyan: rgb(158,225,205); // #9ee1cd
+$mm-pastel-green: rgb(213,223,155); // #d5df9b
+$mm-pastel-yellow: rgb(239,226,157); // #efe29d
+$mm-pastel-pink: rgb(235,209,209); // #ebd1d1
+$mm-pastel-pink-lighter: #fff5f8; // #fff5f8
+
+$mm-pastel-blue-dim: rgba(165,221,226, .45);
+$mm-pastel-cyan-dim: rgba(158,225,205, .45);
+$mm-pastel-green-dim: rgba(213,223,155, .45);
+$mm-pastel-yellow-dim: rgba(239,226,157, .45);
+$mm-pastel-pink-dim: rgba(235,209,209, .45);
+
+
+// Component-specific colors.
+$mm-footer-color:    #e9f0f4;
+$mm-browser-green:   #2ea681;
+$mm-workspace-green: $mm-green;
+
+// Use case colors.
+$mm-brand-warning:     #E5A933;
+$mm-warning-yellow:    #fcc400;
+$mm-highlight-yellow:  #fff8e1;
+$tableheaderseparator: #bdddec;
+
+// Heights
+$action-bar-height:         80px;
+$table-header-height:       40px;
+$table-footer-height:       $table-header-height;
+
+$panel-heading-height:      66px;
+$breadcrumbs-height:        20px;
+$pagination-height:         65px;
+
+$subheader-height:          236px;
+
+$planner-action-bar-height: $action-bar-height * 1.75;
+$planner-nav-top-margin:    0px;
+$planner-nav-height:        ($subheader-height -
+                             $planner-action-bar-height -
+                             $planner-nav-top-margin);
+$planner-offset:            ($planner-nav-top-margin +
+                             $planner-nav-height);
+
+$offset: $planner-action-bar-height + $table-footer-height;
+
+// Padding
+$table-footer-padding: 10px 20px;
+
+// disabled button state
+$btn-disabled-opacity: 0.75;
+//** Dropdown menu `border-color`.
+$dropdown-border:                rgba(0,0,0,.15) !default;
+
+$input-border-focus:             #66afe9 !default;

@@ -1,0 +1,9 @@
+{
+    "status": {
+        "type": "unsuccess",
+        "code": 401,
+        "message": "Unauthorized",
+        "error": true
+    },
+    "data": []
+}

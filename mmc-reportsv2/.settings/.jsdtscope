@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="src/services/pending-requests/|src/plugins/|**/node_modules/*|src/views/header/|src/behaviors/|src/plugins/pluralize/|src/services/alerts/|src/plugins/jquery-requests-batching/|src/|src/views/portal/|src/views/header/userHeader/|**/bower_components/*|src/plugins/more-less/|src/plugins/jquery-blob-transport/|src/plugins/mm-datetimepicker/|src/plugins/mm-popover/|src/plugins/mm-select2/|**/*.min.js|src/services/session-timer/|src/application/|src/plugins/middle-ellipsis/|src/plugins/mm-typeahead/|src/views/" kind="src" path=""/>
+	<classpathentry excluding="plugins/jquery-blob-transport/|plugins/mm-datetimepicker/|**/node_modules/*|plugins/mm-popover/|plugins/mm-select2/|services/session-timer/|views/header/userHeader/|plugins/middle-ellipsis/|plugins/mm-typeahead/|services/pending-requests/|application/|views/header/|views/|**/bower_components/*|plugins/pluralize/|services/alerts/|plugins/jquery-requests-batching/|plugins/|behaviors/|views/portal/|**/*.min.js|plugins/more-less/" kind="src" path="src"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/application"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/behaviors"/>
+	<classpathentry excluding="middle-ellipsis/|mm-typeahead/|**/bower_components/*|**/node_modules/*|more-less/|jquery-blob-transport/|mm-datetimepicker/|pluralize/|mm-popover/|mm-select2/|jquery-requests-batching/|**/*.min.js" kind="src" path="src/plugins"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/jquery-blob-transport"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/jquery-requests-batching"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/middle-ellipsis"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/mm-datetimepicker"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/mm-popover"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/mm-select2"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/mm-typeahead"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/more-less"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/plugins/pluralize"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/services/alerts"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/services/pending-requests"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/services/session-timer"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|header/userHeader/|portal/|**/*.min.js|header/" kind="src" path="src/views"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|userHeader/|**/*.min.js" kind="src" path="src/views/header"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/views/header/userHeader"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="src/views/portal"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

@@ -1,0 +1,470 @@
+// Fixes Bootstrap 3 issues with input groups
+@import 'typeahead.js-bootstrap3.less/typeahead';
+// Override BS3 styles to adhere to connect styles and implementations
+
+a {
+  color: $mm-pink;
+  &:hover, &:focus {
+    color: $mm-pink;
+  }
+}
+
+.btn-link {
+  color: $mm-pink;
+  &:hover, &:focus {
+    color: $mm-pink-2;
+  }
+}
+
+.btn {
+  .fa {
+    font-size: 0.923em;
+  }
+}
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  @include opacity(0.75);
+  > * {
+    @include opacity(0.4);
+  }
+}
+.btn-link.disabled, .btn-link[disabled], fieldset[disabled] .btn-link {
+  > * {
+    @include opacity(1);;
+  }
+}
+.btn-link {
+  font-weight: bold;
+  &[disabled],
+  & {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.form-group {
+  .field-label {
+    text-align: right;
+
+    > legend.control-label {
+      border-bottom: none;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+  .field-item {
+    text-align: left;
+    .mm-checkbox {
+      padding-top: 7px;
+    }
+    > .input-group {
+      > .input-group-addon + .mm-datetimepicker {
+        > input {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+      > .input-group-addon ~ .select2-container.form-control {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        &.select2-dropdown-open {
+          border-bottom-right-radius: 0;
+        }
+      }
+      > .input-group-addon + .btn-group > label.btn {
+        &:first-child {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+//handling nested .form-inline inside .form-horizontal
+.form-horizontal .form-inline > .form-group {
+  margin: 0 0 15px 0;
+  position: relative;
+  max-width: 100%;
+  > .field-item {
+    > .select2-container {
+      min-width: 90px;
+    }
+  }
+}
+
+//handling nested .form-group inside .form-group
+.form-horizontal .form-group .form-group {
+  margin: 0 0 15px 0;
+  > .field-label {
+    text-align: left;
+    > label {
+      padding-top: 0;
+    }
+  }
+}
+
+.form-inline .form-control {
+  width: 100%;
+}
+
+.select2-container {
+  z-index: auto;
+}
+
+.form-control.select2-container {
+  .select2-choice {
+    border: 0;
+  }
+}
+
+.select2-container {
+  .select2-choice {
+    height: 34px;
+    background-image: none;
+
+    > .select2-chosen {
+      padding: 3px;
+    }
+
+    .select2-arrow b {
+      background-position: 0 4px;
+    }
+  }
+
+  .select2-choices {
+    .select2-search-field input {
+      padding-left: 12px;
+    }
+  }
+}
+
+// Select 2 styles to display the errors 
+select[multiple].select2-hidden-accessible {
+  height: 40px;
+}
+
+//select2
+.select2{
+  width: 100% !important;
+}
+
+.has-error {
+  .select2-offscreen {
+    min-height: 30px;
+  }
+  .select2-container {
+    .select2-selection--multiple {
+      border-color: $mm-red;
+    }
+    &--default.select2-container--focus {
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    }
+  }
+}
+
+// rome calendar
+.rd-container {
+  // need to be above bootstrap popover.
+  z-index: 1100;
+}
+
+.dragtable-sortable li {
+  background: none;
+}
+
+// twitter typeahead
+.twitter-typeahead {
+  width: 100%;
+}
+
+.tt-menu {
+  // top: 60% !important; // Override Twitter Typeahead's inline style.
+  max-height: 200px;
+  overflow-y: scroll;
+  box-shadow: 0 5px 15px 0 rgba(170,170,170,1);
+  max-width: 100%;
+  width: 100%;
+}
+
+.tt-input {
+  background-color: $mm-white !important;
+}
+
+// NOTE: "~" is a sibling selector.
+input:focus ~ .tt-empty {
+  display: block !important;
+}
+
+.tt-pending,
+.tt-notfound {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  background-color: $mm-white;
+}
+
+.tt-suggestion {
+  background-color: $mm-white;
+  padding: 5px 10px;
+  border: 1px solid $mm-gray8;
+  border-bottom-color: transparent;
+  &:last-child { border-bottom: solid 1px $mm-gray8; }
+  &:hover,
+  &.tt-cursor {
+    background-color: $mm-pink;
+    color: $mm-white;
+    cursor: pointer;
+    border: solid 1px $mm-pink;
+  }
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//=== Custom checkbox implementation ===
+
+//The HTML markup to use custom checkbox:
+//<div class="mm-checkbox">
+//  <input type="checkbox" />
+//  <label></label>
+//</div>
+
+.mm-checkbox,
+.mm-radio {
+  width: 14px;
+  min-width: 14px;
+  height: 14px;
+  margin: auto;
+  position: relative;
+}
+
+.mm-checkbox--inline {
+  width: initial;
+  min-width: initial;
+  height: initial;
+  margin: 0 10px 0 0;
+  &-heading {
+    margin: 10px 0;
+  }
+  > label {
+    cursor: pointer;
+    font-weight: normal;
+  }
+}
+
+.mm-checkbox input[type="checkbox"],
+.mm-radio input[type="radio"] {
+  @include opacity(0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  margin-left: 0;
+  margin-top: 0;
+  display: inline-block;
+  width: 14px;
+  min-width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.mm-checkbox input + .mm-checkbox__checkbox,
+.mm-radio input + .mm-checkbox__checkbox {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin-top: 1px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: $mm-gray-dark;
+}
+
+.mm-checkbox input:focus + .mm-checkbox__checkbox::before {
+  content: "";
+  display: block;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  top: 2px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px 1px $mm-blue2;
+}
+
+.mm-checkbox--inline input + .mm-checkbox__checkbox + .mm-checkbox__text {
+  margin-left: 22px;
+}
+
+.mm-checkbox input + .mm-checkbox__checkbox::after,
+.mm-radio input + .mm-checkbox__checkbox::after {
+  font-family: 'FontAwesome';
+  content: "\f096";
+  font-weight: normal;
+  position: absolute;
+  height: 14px;
+  top: -2px;
+  left: -1px;
+  padding: 0 1px;
+}
+
+.mm-checkbox input[type="checkbox"]:checked + .mm-checkbox__checkbox.partial-check::after,
+.mm-radio .mm-checkbox__checkbox.partial-check::after {
+  content: '\f147';
+  color: $mm-gray-dark;
+}
+
+.mm-checkbox input[type="checkbox"]:checked + .mm-checkbox__checkbox,
+.mm-radio input[type="radio"]:checked + .mm-checkbox__checkbox {
+}
+
+.mm-checkbox input[type="checkbox"]:checked + .mm-checkbox__checkbox::after,
+.mm-radio input[type="radio"]:checked + .mm-checkbox__checkbox::after {
+  content: '\f046';
+}
+
+.mm-checkbox--black input[type="checkbox"] + .mm-checkbox__checkbox,
+.mm-radio--black .mm-checkbox__checkbox {
+  color: $mm-gray-dark;
+}
+//=== End of custom checkbox implementation ===
+
+//=== Custom switch implementation ===
+.mm-switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 26px;
+  margin-right: 80px;
+}
+
+.mm-switch > input {
+  display: none;
+}
+
+.mm-switch__check {
+  position: absolute;
+  left: 10px;
+  bottom: 4px;
+  font-size: 18px;
+  color: $mm-white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 2px $mm-gray-light);
+  filter: drop-shadow(1px 1px 2px $mm-gray-light);
+  display: none;
+}
+.mm-switch__times {
+  position: absolute;
+  right: 11px;
+  bottom: 4px;
+  font-size: 18px;
+  color: $mm-white;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 2px $mm-gray-light);
+  filter: drop-shadow(1px 1px 2px $mm-gray-light);
+  -webkit-transition: transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.mm-switch__slider {
+  box-sizing: border-box;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $mm-gray5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px $mm-gray2 inset;
+}
+
+.mm-switch__slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 30px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 2px;
+  box-shadow: 0 0 8px $mm-gray2;
+  background-image: linear-gradient(-180deg, $mm-white 0%, $mm-gray5 100%);
+  -webkit-transition: transform 0.4s;
+  transition: transform 0.4s;
+  z-index: 1;
+}
+.mm-switch__slider:after {
+  position: absolute;
+  left: 13px;
+  bottom: 7px;
+  content: "";
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background-image: linear-gradient(-180deg, $mm-gray9 0%, $mm-white 100%);
+  z-index: 2;
+  -webkit-transition: transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.mm-switch > input:checked + .mm-switch__slider {
+  background-color: $mm-pink;
+  box-shadow: 0 0 0 1px $mm-pink-6 inset;
+}
+
+.mm-switch > input:focus + .mm-switch__slider {
+  box-shadow: 0 0 1px $mm-blue;
+}
+
+.mm-switch > input:checked + .mm-switch__slider:before {
+  box-shadow: 0 0 8px $mm-red4;
+  -webkit-transform: translateX(32px);
+  -ms-transform: translateX(32px);
+  transform: translateX(32px);
+}
+
+.mm-switch > input:checked + .mm-switch__slider:after {
+  -webkit-transform: translateX(32px);
+  -ms-transform: translateX(32px);
+  transform: translateX(32px);
+}
+.mm-switch > input:checked ~ .mm-switch__check {
+  @include opacity(1);
+  display: block;
+}
+.mm-switch > input:checked ~ .mm-switch__times {
+  display: none;
+}
+
+.mm-switch__state {
+  pointer-events: none;
+}
+
+.mm-switch__state::before {
+  content: "Disabled";
+  position: absolute;
+  z-index: 100;
+  left: 80px;
+  bottom: 3px;
+  color: $mm-gray5;
+}
+
+.mm-switch > input:checked ~ .mm-switch__state::before {
+  content: "Enabled";
+  color: $mm-pink;
+}
+//=== End of custom switch implementation ===

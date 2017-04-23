@@ -1,0 +1,130 @@
+@import 'bootstrap/dist/css/bootstrap';
+//@import 'css/bootstrap.min';
+@import 'bootstrap-sass/assets/stylesheets/_bootstrap';
+@import 'select2/select2';
+@import 'select2/select2-bootstrap';
+@import 'font-awesome/css/font-awesome';
+@import 'sass/variables';
+@import 'sass/mixins';
+@import 'application/styles';
+@import 'application/userstyles';
+@import 'plugins/mm-select2/mm-select2';
+@import 'services/alerts/styles';
+@import 'css/dataTables.bootstrap.min';
+@import 'css/responsive.bootstrap.min';
+@import 'components/datatable/styles';
+
+
+html,
+body,
+.application {
+  font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Thin.woff') format('woff'), url('fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff') format('woff'), url('fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff') format('woff'), url('fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff') format('woff'), url('fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.woff') format('woff'), url('fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  //Roboto becomes bold at 700
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  background-color: $mm-gray3;
+}
+
+// modal z-index
+// modal z-index is between layovers (1040) and popovers (1060)
+.modal {
+  z-index: 1050;
+}
+// dynamic popovers
+.popover {
+  max-width: 100%;
+  //max-height: 100%;
+}
+
+.tooltip {
+  &.bottom .tooltip-arrow {
+    border-bottom-color: $mm-gray-dark;
+  }
+  &.left .tooltip-arrow {
+    border-left-color: $mm-gray-dark;
+  }
+  &.right .tooltip-arrow {
+    border-right-color: $mm-gray-dark;
+  }
+  &.top .tooltip-arrow {
+    border-top-color: $mm-gray-dark;
+  }
+  .tooltip-inner {
+    background-color: $mm-gray-dark;
+    max-width: 300px;
+  }
+  z-index: 1101;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background: $mm-pink;
+  color: $mm-white;
+}
+
+.dropdown-menu > .disabled > a {
+  &,
+  &:hover,
+  &:focus {
+    color: $mm-gray8;
+  }
+}
+
+.mm-offscreen, .mm-offscreen:focus {
+  clip: rect(0 0 0 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  outline: 0 !important;
+  left: 0 !important;
+  top: 0 !important;
+}

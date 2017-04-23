@@ -1,0 +1,58 @@
+.confirm-modal {
+  /**
+   * Pseudoelement that comes before the element we want to vertically center.
+   */
+  &.modal::before {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    // The height is now 100% of page height, but it's not vertically centered.
+    // So center it.
+    vertical-align: middle;
+  }
+
+  /**
+   * Element to vertically center.
+   */
+  & .modal-dialog {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+
+    // Here's the magic sauce! This works because of our pseudoelement above.
+    vertical-align: middle;
+  }
+  .modal-header,
+  .modal-footer {
+    border: none;
+  }
+  .modal-body {
+    padding-left: 30px;
+  }
+  .modal-content {
+    margin: auto;
+    //@media (min-width: $screen-sm-min) {
+      //width: 550px;
+    //}
+  }
+  .exclamation-triangle {
+    &--danger  {
+      @extend .fa-exclamation-triangle;
+      //color: $brand-danger;
+    }
+
+    &--warning {
+      @extend .fa-exclamation-triangle;
+      color: $mm-brand-warning;
+    }
+  }
+
+  &__session.modal {
+    z-index: 10001;
+  }
+}
+
+//overlay everything in app
+.modal-backdrop__session {
+  z-index: 10000;
+}

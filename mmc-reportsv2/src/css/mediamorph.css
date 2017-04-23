@@ -1,0 +1,568 @@
+/*Define Body Color*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	font-family: sans-serif;
+	color: #484848;
+}
+.login {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mm-application{
+	position: relative;
+	height: 100%;
+	width: 100%/* ;
+	padding-top: 51px; */
+}
+/* Main Container */
+.mm-main-container {
+	min-height: 500px;
+	padding-top: 150px;
+}
+.mm-fullscreen-main-container{
+	min-height: 500px;
+}
+
+.mm-fullscreen-content{
+	margin:30px 0px;
+}
+
+.mm-browser-error-text{
+	line-height: 30px;
+}
+
+/**Navigation and Header*/
+
+.navbar-header{
+	height: 50px;
+}
+
+.mm-application-header {
+	position: absolute;
+	width: 100%;
+}
+.mm-fullscreen-application-header{
+	position: relative;
+	width: 100%;
+}
+.mm-header-title-region {
+	background-color: #1fa5cd;
+	height: 283px;
+}
+.mm-application-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.mmTopHeader {
+	
+}
+.mm-page-header {
+	background-color: #2ba6cb;
+		-webkit-box-shadow: 0 1px 2px #bbb;
+	-moz-box-shadow: 0 1px 2px #bbb;
+	box-shadow: 0 1px 2px #bbb;
+	height: 170px;
+	display: flex;
+	align-items: center;
+}
+/* Need to define width for nested container because of vertical allign.*/
+.mm-page-header .container-fluid{
+	width:100%
+}
+.login-header__logo {
+	width: 200px;
+	margin-top: 10px;
+	height: 30px;
+	background-image: url("../img/logo.svg");
+	background-size: auto 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.img__logo {
+	width: 200px;
+	margin-top: 10px;
+	height: 30px;
+	background-image: url("../img/logo_img.png");
+	background-size: auto 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mm-horizontal-list{
+	padding: 20px 0px;
+}
+.mm-horizontal-list a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+.mm-horizontal-list li{
+	float: left;
+	list-style: none;
+	width: 20%;
+}
+
+.mm-horizontal-list li .icon{
+	width: 67px;
+	height: 67px;
+	margin: 0 auto 20px;
+	background-size:100% 100%;
+}
+.mm-horizontal-list li#firefox .icon {
+	background-image: url("../img/browser_logos/ff_ico.png");
+}
+.mm-horizontal-list li#chrome .icon {
+	background-image: url("../img/browser_logos/chrome_ico.png");
+}
+.mm-horizontal-list li#safari .icon {
+	background-image: url("../img/browser_logos/safari_ico.png");
+}
+.mm-horizontal-list li#opera .icon {
+	background-image: url("../img/browser_logos/opera_ico.png");
+}
+.mm-horizontal-list li#ie .icon {
+	background-image: url("../img/browser_logos/ie_ico.png");
+}
+.vertical-center {
+	display: flex;
+	align-items: center;
+}
+.mm-page-header .title-content {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1170px;
+}
+.mm-title {
+	color: #fff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 95px;
+	padding-bottom: 145px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.mm-fullscreen-title{
+	color: #fff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 215px;
+	font-size: 42px;
+	text-align: center;
+}
+.mm-sub-header{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	border-top-width: 0;
+	display: block;
+	overflow: hidden;
+	list-style: none;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #f6f6f6;
+	border-color: #dcdcdc;
+}
+.mm-sub-header .breadcrumb{
+	margin: 0px;
+}
+.mm-sub-header .nav-tabs{
+	border-bottom: 0px;
+}
+
+/*-----Error Field -----*/
+.mm-field-error {
+	color: #F36191;
+	font-style: italic;
+	font-size: 12px;
+}
+/* --- Notification button --- */
+.mm-notification-icon {
+    position: relative;
+}
+
+.mm-notification-count-indicator {
+    /* initial state */
+    display: none;
+
+    /* font styling */
+    font-size: 0.8em;
+    font-weight: bold;
+
+    /* positioning */
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    line-height: normal;
+    padding: 0% 5% 5%;
+
+    /* colors */
+    background: #c12e2a;
+    color: white;
+
+    /* rounded borders */
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+
+.mm-notification-dropdown-menu {
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+    min-width: 500px;
+}
+
+.mm-notification-alert-type {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.mm-notification-no-alerts {
+    margin-left: 5px;
+    color: #adadad;
+    text-align: center;
+}
+
+/*Datatables Table Mediamorph*/
+.mm-table-default {
+
+}
+.mm-table-default tr {
+	font-size: 11px;
+	white-space: nowrap;
+}
+
+.mm-table-default th {
+	background-color: #d9edf7 !important;
+}
+.mm-table-default td {
+	word-break: break-all;
+}
+.mm-table-default .dataTables_empty {
+	padding-left: 3%;
+}
+.mm-forgot-password{
+	padding-top: 10px;
+}
+.mm-text-note-padded{
+	padding-top:4px;
+}
+/* --- Date picker --- */
+.ui-datepicker {
+	width: 216px;
+	height: auto;
+	margin: 5px auto 0;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	background-color: #FFF;
+}
+
+.ui-datepicker a {
+	text-decoration: none;
+}
+
+.ui-datepicker table {
+	width: 100%;
+}
+
+.ui-datepicker-header {
+	background-color: #000;
+	color: #e0e0e0;
+	font-weight: bold;
+	text-shadow: 1px -1px 0px #000;
+	line-height: 30px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #111;
+}
+
+.ui-datepicker-title {
+	text-align: center;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	margin: 5px;
+	cursor: pointer;
+	background-image: url('images/ui-icons_ffffff_256x240.png');
+	background-repeat: no-repeat;
+	line-height: 600%;
+	overflow: hidden;
+}
+
+.ui-datepicker-prev {
+	background-position: -80px -192px;
+	float: left;
+}
+.ui-datepicker-next {
+	background-position: -48px -192px;
+	float: right;
+}
+
+.ui-datepicker tbody td {
+	padding: 0;
+	border-right: 1px solid #bbb;
+}
+.ui-datepicker tbody td:last-child {
+	border-right: 0px;
+}
+
+.ui-datepicker tbody tr {
+	border-bottom: 1px solid #bbb;
+}
+.ui-datepicker tbody tr:last-child {
+	border-bottom: 0px;
+}
+
+.ui-datepicker thead {
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker th {
+	text-transform: uppercase;
+	font-size: 6pt;
+	padding: 5px 0;
+	color: #666666;
+	text-shadow: 1px 0px 0px #fff;
+	text-align: center;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #666666;
+	text-shadow: 1px 1px 0px #fff;
+	filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+.ui-datepicker-calendar .ui-state-default {
+	background: #ededed;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+	background: #f4f4f4;
+	color: #b4b3b3;
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+	background: #f7f7f7;
+}
+
+.ui-datepicker-calendar .ui-state-highlight {
+	background: #f4f4f4;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+	background: #3AADD8;
+	color: #e0e0e0;
+	text-shadow: 0px 1px 0px #4d7a85;
+	border: 1px solid #55838f;
+	position: relative;
+}
+	
+/*Notifier Inner*/
+.notifier-with-loader .notifier-inner{
+	box-shadow: 0 0 8px #ECEBEB, 0 0 1px #ECEBEB, inset 0 0 2px #ECEBEB, inset 0 0 70px #ECEBEB !important;
+	background: #ECEBEB !important;
+}
+.notifier-with-loader .notifier-inner .notifier-message{
+	margin: 1px !important;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color:#2BA6CB !important;
+}
+
+.panel .panel-body {
+	padding: 20px 30px 15px 30px;
+}
+
+.panel .panel-footer{
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.panel .panel-heading{
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 1.6;
+}
+
+.panel .panel-title{
+	font-size: 17px;
+	font-weight: 500;
+	padding-right: 0px;
+}
+
+.panel .back-title{
+	font-size: 14px;
+	padding-left: 0px;
+	margin-bottom: 20px;
+}
+
+/** Tooltips **/
+.tooltip-inner {
+    max-width: 350px;
+ 	width: 100%;
+}
+
+/** Panels **/
+.login-panel{
+	margin-bottom: 0px;
+}
+
+.col-no-padding {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.loginbox{
+	max-width: 500px;
+}
+
+#errorbox {
+	max-width: 500px;
+}
+
+/** Add-on **/
+.left-inner-addon {
+	position: relative;
+}
+.left-inner-addon input {
+	padding-left: 30px;
+}
+.left-inner-addon i {
+	position: absolute;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+
+.right-inner-addon {
+	position: relative;
+}
+.right-inner-addon input {
+	padding-right: 30px;
+}
+.right-inner-addon span.right-inner-addon-img {
+	position: absolute;
+	right: 0%;
+	padding: 10px 12px;
+	pointer-events: none;
+	color: #2A6496;
+}
+
+/** Buttons **/
+.btn-md {
+	font-size: 17px;
+}
+
+.btn-pink {
+	padding: 7px 12px;
+	color: #fff;
+	background-color: #e10086;
+	border-color: #ff069a;
+}
+.btn-pink:hover, .btn-pink:focus {
+	color: #fff;
+	background-color: #ae0068;
+	border-color: #c80077;
+}
+
+.btn-link, a, a:focus, a:hover {
+	color: #e10086;
+}
+
+.btn-link-black, .btn-link-black:focus, .btn-link-black:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+.margin-zero-auto {
+	margin: 0 auto;
+}
+
+input.form-control {
+	height: 38px;
+}
+
+.input-mm-lg {
+	height: 38px;
+}
+
+.display-none {
+	display: none
+}
+.display-block {
+	display: block
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background: #e10086;
+  color: white;
+}
+.remember-me {
+	margin-left: 0px !important;
+}
+.panel-title-font {
+	font-weight: 500;
+}
+.panel-body-height {
+	/* min-height: 237px; */
+	min-height: 237px;
+}
+.reset-pwd-panel-body-height {
+	min-height: 189px;
+	height: auto;
+}
+.title__acc-management {
+    color: rgb(255, 255, 255);
+    margin-bottom: 22px;
+}
+
+.user-admin .panel .panel-body {
+    padding: 25px 0px 20px;
+}
+.user-admin .panel-body {
+    margin: 0px 0 0px;
+}
+.user-admin input.form-control {
+	height: auto;
+}
+.portal {
+	height: 286px;
+}
+.session-modal .modal-header, .session-modal .modal-footer{
+	border: none;
+}
+.session-modal .fa-exclamation-triangle {
+    color: #E5A933;
+}
+
+.form-group .asterisk {
+    position: relative
+}
+
+.form-group .asterisk::before {
+    content: "*";
+    color: #d00;
+    position: absolute;
+    left: 4px;
+    top: calc(50% + 2px);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}

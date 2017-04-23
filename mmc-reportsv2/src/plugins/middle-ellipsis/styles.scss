@@ -1,0 +1,14 @@
+.middle-ellipsis__start {
+  @include ellipsis();
+  text-decoration: underline;
+  max-width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.middle-ellipsis__end {
+  text-decoration: underline;
+  display: inline-block;
+  max-width: 15%;
+  vertical-align: middle;
+}

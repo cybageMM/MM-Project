@@ -1,0 +1,89 @@
+.dataTables_paginate .pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: $line-height-computed 0;
+  border-radius: $border-radius-base;
+
+  > li {
+    display: inline; // Remove list-style and block-level defaults
+    > a,
+    > span {
+      position: relative;
+      float: left; // Collapse white-space
+      padding: $padding-base-vertical $padding-base-horizontal;
+      line-height: $line-height-base;
+      text-decoration: none;
+      color: $mm-gray-dark;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      margin-left: -1px;
+    }
+    &:first-child {
+      > a,
+      > span {
+        margin-left: 0;
+        @include border-left-radius($border-radius-base);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        @include border-right-radius($border-radius-base);
+      }
+    }
+  }
+
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      z-index: 2;
+      color: #333;
+      background-color:#eee;
+      border-color: #ddd;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      z-index: 3;
+      color: #333;
+      background-color: #eee;
+      border-color: #ddd;
+      cursor: default;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      cursor: $cursor-disabled;
+    }
+  }
+}
+.dataTables_wrapper table thead tr th{
+	background: #e8e8e8;
+  	border-top: none;
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px!important;
+}
+// Sizing
+// --------------------------------------------------
+
+// Large
+.pagination-lg {
+  @include pagination-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+}
+
+// Small
+.pagination-sm {
+  @include pagination-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+}

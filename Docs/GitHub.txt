@@ -1,0 +1,7 @@
+Username: cybageMM
+Password: cybage_2017
+
+1. Create a new Project
+2. Copy the HTTPS path
+3. Go to your folder > Open Git Bash 
+4. git clone <path>

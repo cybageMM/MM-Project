@@ -1,0 +1,8 @@
+{
+    "status": {
+        "type": "success",
+        "code": 200,
+        "message": "User authenticated",
+        "error": false
+    }
+}

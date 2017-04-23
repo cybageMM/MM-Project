@@ -1,0 +1,20 @@
+{
+    "status": {
+        "type": "success",
+        "message": "User authenticated",
+        "error": false
+    },
+    "data": [
+        {
+            "user": {
+                "email": "igsuser@mm.com",
+                "username": "lgsuser",
+                "fullName": "Test User",
+                "lastname": "test1",
+                "firstname": "test2",
+                "lockStatus": "Unlock",
+                "id": 11111
+            }
+        }
+    ]
+}

@@ -1,0 +1,129 @@
+.nowrap {
+  white-space: nowrap;
+}
+
+.no-pad {
+  padding: 0;
+}
+.no-left-padding {
+  padding-left: 0;
+}
+.no-right-padding {
+  padding-right: 0;
+}
+.pad-bot-20 {
+  padding-bottom: 20px;
+}
+.no-border {
+  border: 0;
+}
+
+.overflow-hide {
+  overflow: hidden !important;
+}
+
+.dis-none {
+  display: none;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.bdr-radius-none {
+  border-radius: 0;
+}
+
+.col-center {
+  float: none;
+  margin: 0 auto;
+}
+
+// Colors:
+
+.color-white {
+  color: $mm-white;
+}
+.color-pink {
+  color: $mm-pink;
+}
+.color-pink-lighter {
+  color: $mm-pink-lighter;
+}
+.color-pastel-blue {
+  color: $mm-pastel-blue;
+}
+.color-pastel-cyan {
+  color: $mm-pastel-cyan;
+}
+.color-pastel-green {
+  color: $mm-pastel-green;
+}
+.color-pastel-yellow {
+  color: $mm-pastel-yellow;
+}
+.color-pastel-pink {
+  color: $mm-pastel-pink;
+}
+.color-black2 {
+  color: $mm-black2;
+}
+
+.bg-color-white {
+  background-color: $mm-white;
+}
+.bg-color-gray3 {
+  background-color: $mm-gray3;
+}
+.bg-color-gray5 {
+  background-color: $mm-gray5;
+}
+.bg-color-pink {
+  background-color: $mm-pink;
+}
+.bg-color-pink-lighter {
+  background-color: $mm-pink-lighter;
+}
+.bg-color-pastel-blue {
+  background-color: $mm-pastel-blue;
+}
+.bg-color-pastel-cyan {
+  background-color: $mm-pastel-cyan;
+}
+.bg-color-pastel-green {
+  background-color: $mm-pastel-green;
+}
+.bg-color-pastel-yellow {
+  background-color: $mm-pastel-yellow;
+}
+.bg-color-pastel-pink {
+  background-color: $mm-pastel-pink;
+}
+.bg-color-blue {
+  background-color: $mm-blue;
+}
+.bg-color-green {
+  background-color: $mm-browser-green;
+}
+.bg-color-gold {
+  background-color: $mm-gold;
+}
+.bg-color-purple {
+  background-color: $mm-purple;
+}
+
+.box-shadow-pastel-blue {
+  box-shadow: 5px 5px 1px $mm-pastel-blue-dim;
+}
+.box-shadow-pastel-cyan {
+  box-shadow: 5px 5px 1px $mm-pastel-cyan-dim;
+}
+.box-shadow-pastel-green {
+  box-shadow: 5px 5px 1px $mm-pastel-green-dim;
+}
+.box-shadow-pastel-yellow {
+  box-shadow: 5px 5px 1px $mm-pastel-yellow-dim;
+}
+.box-shadow-pastel-pink {
+  box-shadow: 5px 5px 1px $mm-pastel-pink-dim;
+}

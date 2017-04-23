@@ -1,0 +1,152 @@
+@mixin vertical-center {
+  &::before {
+    height: 100%;
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+  }
+
+  > * {
+    display: inline-block !important;
+    vertical-align: middle;
+    float: none !important;
+  }
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin text-toggle($padding-left: 5px) {
+  padding-left: $padding-left;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin table-shadow {
+  box-shadow: 0 0 10px 0 $mm-gray-light;
+}
+
+/**
+ * Adds a search icon to an `<input type="search">`.
+ *
+ * Usage:
+ *   <div class="form-group has-feedback">
+ *     <input type="search" class="form-control" placeholder="...">
+ *     <i class="fa fa-search form-control-feedback"></i>
+ *   </div>
+ */
+@mixin search-bar($bg-color: $mm-gray, $placeholder-color: "") {
+  .has-feedback {
+    .form-control {
+      @include form-control-focus(white);
+      background-color: $bg-color;
+    }
+
+    .form-control::-webkit-input-placeholder { color: unquote($placeholder-color); }
+    .form-control::-moz-placeholder          { color: unquote($placeholder-color); } // Firefox 19+
+    .form-control:-moz-placeholder           { color: unquote($placeholder-color); } // Firefox 18-
+    .form-control:-ms-input-placeholder      { color: unquote($placeholder-color); }
+
+    .fa-search {
+      color: $placeholder-color;
+      line-height: $input-height-base; // Vertical center.
+    }
+  }
+}
+
+/**
+ * Removes the borders on .modal-header and .modal-footer in Bootstrap.
+ */
+@mixin remove-modal-borders {
+  .modal {
+    &-header { padding-bottom: 0; }
+    &-body   { padding-top: 0; }
+
+    &-header,
+    &-footer {
+      border: none;
+    }
+
+    &-footer {
+      padding-bottom: 30px;
+
+      > .form-group {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+/*
+ * Underline the content of an element not using the text-decoration
+ */
+@mixin underline($width: 100%, $height:1px, $color:white) {
+  &::after {
+    content: "";
+    display: block;
+    height: $height;
+    background-color: $color;
+    width: $width;
+    float: right;
+  }
+}
+
+@mixin app-min-width() {
+  min-width: 1366px;
+}
+
+// mixin for creating animations for .mm-btn--is-pending state - button animation
+@mixin mm-btn-pending-animation ($background_color) {
+  &.mm-btn--is-pending {
+    background-size: 20px 20px;
+    background-color: darken($background_color, 10%);
+
+    span {
+      animation-name: loading-dots;
+      animation-duration: 1.4s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+    }
+
+    /**
+     * Starts the animation of the second dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+    span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    /*similarly for the third dot*/
+    span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes loading-dots {
+      0% { @include opacity(0.2); }
+      20% { @include opacity(1); }
+      100% { @include opacity(0.2); }
+    }
+  }
+}
+
+// For view-saved-searches modal and saved-collections modal to preserve the elements alignment for resolution lower and greater than 1366px;
+@mixin modal-view() {
+  @media (min-width: 768px) {
+    min-width: 730px;
+    width: 70vw;
+  }
+  @media (max-width: 767px) {
+    width: 95vw;
+    max-width: 730px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
