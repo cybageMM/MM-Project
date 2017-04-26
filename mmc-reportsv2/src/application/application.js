@@ -8,7 +8,7 @@ var MDRApplication = Application.extend({
   initialize: function() {
     this.$body = $(document.body);
     this.layout = new LayoutView();
-    this.layout.render();
+    this.layout.render();  
   },
 });
 

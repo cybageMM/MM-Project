@@ -1,0 +1,206 @@
+.compare__actions {
+  padding: 0 0 10px;
+}
+.reports {
+	margin-top: 111px;
+}
+.report--header {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  &__container {
+    background: $mm-white;
+    border: 1px solid $mm-gray-lighter;
+    border-radius: 5px;
+  }
+
+  &__subModule {
+    margin-bottom: 30px;
+
+    &__header {
+      padding: 20px 16px 0 16px;
+
+      &__title {
+        font-size: 20px;
+      }
+    }
+
+    &__content {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.reports .postit-view__wrapper {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 5px; }
+ 
+.reports .postit-view__wrapper {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container, .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+}
+.compare-contracts {
+  .contract-container > div > .panel > .panel-header {
+    padding-left: 15px;
+  }
+  .postit-view__pane {
+    border: none;
+    box-shadow: none;
+    .postit-view__pane__header {
+      .postit-view__pane__heading {
+        color: $mm-black;
+      }
+      background-color: transparent;
+    }
+  }
+  
+  .contract__header {
+    height: 50px;
+    .contract__header__title {
+      width: 50px;
+      margin: 15px 0 0;
+    }
+    .contract__header__metadata {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .contract__header {
+      height: 70px;
+      .contract__header__metadata {
+        padding-top: 10px;
+        position: relative;
+        top: 0;
+        right: auto;
+      }
+    }
+  }
+
+  .postit-view__pane {
+    margin-bottom: 20px;
+  }
+
+  .section__content__panel .postit-view__sections .row > .col-xs-4 .row > .col-xs-9 {
+    width: 100%; // make panels of default view and finance wrap
+  }
+
+  .side {
+    border-bottom: 1px solid $mm-gray8;
+    padding-top: 20px;
+
+    .side__header {
+      display: none;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      // border-bottom: none; // this breaks the height measurement in src/sub-applications/deals/contracts/contract/compare/view.js
+      border-color: $mm-white;
+    }
+    // set padding on highlighted field then offset to text lines up
+    .mm-form .form-group .form-group.bg-danger {
+      margin-left: -10px;
+      padding-left: 10px;
+    }
+  }
+
+  .item--empty {
+    padding-bottom: 20px;
+  }
+  .section__header {
+    > .mm-accordion__panel-header {
+      > .panel-title {
+        height: 19px; // to level out when the other one has a badge
+      }
+    }
+  }
+  .section__content {
+    .entities-list {
+      padding-left: 0;
+    }
+  }
+  .postit-view__main-header {
+    display: none;
+  }
+  .postit-view__sections {
+    padding: 0;
+  }
+
+  // Can't use utilities here because we need to override bootstrap styles.
+  .mm-accordion {
+    .panel-heading .badge {
+      display: inline-block;
+      margin-left: 8px;
+      background-color: $mm-pink;
+      color: $mm-white;
+    }
+    .panel__field--highlight {
+      background-color: $mm-pastel-pink-lighter;
+      .field-item {
+        padding-right: 5px;
+        .read-only-text {
+          // set to 100%, otherwise it gets width from parent via cascading...
+          width: 100%;
+        }
+      }
+    }
+    [data-id=contractFinance] .panel__field--highlight,
+    [data-id=contractHeader] .panel__field--highlight {
+      padding-bottom: 7px;
+    }
+    .panel__header--highlight {
+      background-color: $mm-pastel-pink-lighter;
+    }
+
+    .mm-col-panel {
+      position: relative;
+      &::before {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        padding: 0 7px;
+        border-radius: 5px;
+        z-index: 999999;
+        background-color: $mm-pink;
+        color: $mm-white;
+      }
+    }
+    .entity--updated .mm-col-panel {
+      box-shadow: 0 0 3px 1px $brand-warning;
+      &::before {
+        content: "Updated";
+        background-color: $brand-warning;
+      }
+    }
+    .entity--created .mm-col-panel {
+      box-shadow: 0 0 3px 1px $brand-success;
+      &::before {
+        content: "Created";
+        background-color: $brand-success;
+      }
+    }
+    .entity--deleted .mm-col-panel {
+      box-shadow: 0 0 3px 1px $brand-danger;
+      &::before {
+        content: "Deleted";
+        background-color: $brand-danger;
+      }
+    }
+  }
+}

@@ -205,10 +205,10 @@ gulp.task('images', function() {
   cp('-r', 'node_modules/select2/select2x2.png', env.DIST + '/css');
   cp('-r', 'node_modules/select2/select2-spinner.gif', env.DIST + '/css');
   cp('-r', 'src/css/bootstrap.min.css', env.DIST + '/css');
-    cp('-r', 'src/css/mediamorph.css', env.DIST + '/css');
-	cp('-r', 'src/response', env.DIST);
-	cp('-r', 'src/labels', env.DIST);
-	cp('-r', 'fonts', env.DIST);
+	cp('-rf', 'src/css/mediamorph.css', env.DIST + '/css');
+	cp('-rf', 'src/response', env.DIST);
+	cp('-rf', 'src/labels', env.DIST);
+	cp('-rf', 'fonts', env.DIST);
 });
 /**
  * Used for linting SCSS.
@@ -284,10 +284,9 @@ gulp.task('build', [
   'fonts',
   'images',
   'scss',
-  'scripts'
+  'scripts',
+  'eslint'
 ]);
-
-gulp.task('lint', ['eslint']);
 
 gulp.task('docs', function(done) {
   childExec('node ./node_modules/jsdoc/jsdoc.js -r -d ./docs/ ./src/', undefined, done);
@@ -317,7 +316,7 @@ gulp.task('prod', function() {
   gulp.start('images');
   gulp.start('minify-css');
   gulp.start('compile');
-  gulp.start('eslint');
+  //gulp.start('eslint');
   gulp.start('scss-lint');
   gulp.start('test');
   gulp.start('version');

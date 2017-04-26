@@ -1,0 +1,191 @@
+.application__header {
+	height: 50px;
+}
+.header {
+  &__logo {
+    $logo-height: 30px;
+    width: 200px;
+    margin-top: 10px;
+    height: $logo-height;
+    background-image: url("../img/logo.png");
+    background-size: auto $logo-height;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .dropdown-menu > li > a:hover {
+    color: $mm-white;
+    background-color: $mm-pink;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    min-width: 1366px;
+    position: absolute;
+  }
+
+  @mixin notification-icon($background-color: $gray-light) {
+    &       { position: relative; }
+    &:after {
+      position: absolute;
+      content: attr(data-content);
+      background-color: $background-color;
+      color: $gray-lighter;
+      font-weight: bold;
+      border-radius: 3px;
+      text-align: center;
+
+      $diameter: 20px;
+      padding: 0 3px;
+      height: $diameter * 0.75;
+      line-height: $diameter * 0.75;
+
+      font-size: 9px;
+      top: -50%;
+      left: 50%;
+
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .mm-download-progress {
+    float: left;
+    padding-top: 16px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    /* width: 30px; */
+    /* height: 15px; */
+    color: $mm-white;
+    font-size: 14px;
+    font-weight: normal;
+    .mm-download-progress-icon {
+      &::after {
+        left: 50%;
+        margin-left: -5px;
+        bottom: 4px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 4px solid $mm-white;
+      }
+      &::before {
+        left: 50%;
+        margin-left: -1px;
+        bottom: 8px;
+        width: 2px;
+        height: 7px;
+        background: $mm-white;
+      }
+      &::after, &::before {
+        animation: bounce 0.5s infinite alternate;
+        -webkit-animation: bounce 0.5s infinite alternate;
+        content: '';
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+      }
+      margin-left: 5px;
+      border: solid 2px $mm-white;
+      border-top: transparent;
+      display: inline-block;
+      height: 10px;
+      width: 20px;
+      margin-right: 5px;
+      position: relative;
+    }
+  }
+  .mmprogress{
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+    .spinner {
+      width: 25px;
+      z-index: 10000;
+    }
+
+    @keyframes rolling-spinner {
+      0%   { transform: rotate(0); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .spinner-icon {
+      width: 25px;
+      height: 25px;
+      box-sizing: border-box;
+
+      border: solid 3px transparent;
+      border-radius: 50%;
+
+      -webkit-animation: rolling-spinner 350ms linear infinite;
+      animation: rolling-spinner 350ms linear infinite;
+
+      border-top-color: $mm-pink;
+      border-left-color: $mm-pink;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar-inverse {
+    .navbar-nav {
+      > li {
+        > a {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+        float: left;
+      }
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a, .dropdown-header {
+          padding: 3px 20px;
+        }
+        > li > a {
+          color: $mm-black;
+          &:hover,
+          &:focus {
+            color: $mm-white;
+            background-color: $mm-pink;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $mm-white;
+            background-color: $mm-pink;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $mm-gray8;
+          }
+        }
+        position: absolute;
+        background-color: $mm-white;
+        float: left;
+        border: 1px solid $dropdown-border;
+      }
+      float: right;
+      margin: 0 -15px 0 0;
+      padding-left: 10px;
+    }
+  }
+
+  .navbar {
+    min-width: 1366px;
+  }
+  .navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+
+  .navbar-header {
+    float: left;
+  }
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    position: absolute;
+  }
+}

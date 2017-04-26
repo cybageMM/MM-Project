@@ -13,13 +13,13 @@
 }
 
 .application:before{
-  position: absolute;
+  position: absolute; 
   z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
   min-width: 1366px;
-  height: 287px;
+  height: 150px;
   content: "";
   background-color: $mm-blue1;
 }

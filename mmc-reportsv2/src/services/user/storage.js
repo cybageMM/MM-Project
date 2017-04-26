@@ -9,7 +9,7 @@ var $ = require('jquery');
 var UserStorage = Storage.extend({
   model: UserModel,
   collection: UserCollection,
-
+  
   getCurrentUser: function() {
     var _this = this;
     var User = this.model;
@@ -23,6 +23,7 @@ var UserStorage = Storage.extend({
     }
     return Promise.resolve(this.userReq);  
   }
+  
 });
 
 module.exports = new UserStorage();

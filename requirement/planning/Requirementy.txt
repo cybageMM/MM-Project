@@ -1,0 +1,47 @@
+1)	Bootstrapping the application 
+a.	Index.html   - Done
+b.	  Main.js (Handle Initialize data for application like user data etc.) Done
+c.	Services. In progress – 18 April
+d.	Entities. In progress (Prateek is looking into routing integration) 19 April
+
+2)	Data table integration – 20 April
+a.	Fetch Data table from NPM 
+b.	Apply CSS based on current template pattern on Data table
+c.	Pagination and sorting 
+3)	HTML for home page - 20 April 
+4)	Favorite, Shared and My report listing display – 26 April
+a.	Edit and delete report with API 
+b.	Add and edit Schedule report page
+c.	Search report with API
+
+5)	Report builder page HTML – 27 April
+
+6)	Report builder page data display – 3 May
+a.	Template dropdown with API integration
+b.	Reports dropdown with API integration
+c.	Select format dropdown with API integration
+d.	Filters dropdown
+e.	Pivot
+f.	Date range pickers (Date options)
+g.	Total row options
+
+7)	Filters on report – 5 may
+a.	Add and remove filter values
+b.	Pivot functionality
+c.	Moving in multi select dropdown
+d.	Ascending and descending on filter values  
+
+8)	Save and save page functionality – 9 May
+a.	Save and save page with API 
+b.	Run report
+9)	Schedule report page display – 11 may
+a.	Display schedule report
+b.	Sorting
+c.	Pagination
+
+Setup on Prateek’s machine will be done by Tomorrow, so he can pick the task which is achievable in his time slot
+Will give the task to Onkar based on his availability as he is busy in his project’s ticket as well 
+I am planning to give him task 3, 5  and 8 so that he can work separately
+
+
+

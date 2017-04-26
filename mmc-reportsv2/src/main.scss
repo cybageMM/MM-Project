@@ -7,12 +7,14 @@
 @import 'sass/variables';
 @import 'sass/mixins';
 @import 'application/styles';
-@import 'application/userstyles';
+@import 'application/common';
 @import 'plugins/mm-select2/mm-select2';
 @import 'services/alerts/styles';
 @import 'css/dataTables.bootstrap.min';
 @import 'css/responsive.bootstrap.min';
 @import 'components/datatable/styles';
+@import 'sub-applications/reports/_mixins';
+@import 'sub-applications/reports/styles';
 
 
 html,

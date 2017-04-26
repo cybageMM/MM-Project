@@ -15,9 +15,11 @@ module.exports = Marionette.View.extend({
 		            "next" : "<span aria-hidden='true'>›</span>"
 		        },
 		    },
+		    colReorder: true,
 		    "pagingType" : "full_numbers",
 		    "searching" : false,
 		    "bLengthChange" : false,
+		    "pageLength": 5,
 		    data : dataSet,
 		    columns : columns
 		});

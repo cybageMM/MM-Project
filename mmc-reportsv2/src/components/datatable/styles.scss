@@ -87,3 +87,30 @@
 .pagination-sm {
   @include pagination-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
 }
+
+//Fa icons
+
+.dataTables_wrapper table tbody tr td .schedule-icon {
+	color: $mm-blue1;
+}
+//.dataTables_wrapper table tbody tr td .delete-icon {
+	//color: black;
+//}
+.dataTables_wrapper table tbody tr td .star-icon {
+	color: $mm-pink;
+}
+.dataTables_wrapper table tbody tr td .lock-icon-black {
+	color: #7F7F7F;
+}
+.dataTables_wrapper table tbody tr td .unlock-icon-black {
+	color: #7F7F7F;
+}
+.dataTables_wrapper table tbody tr td .unlock-icon-grey {
+	color: #C3C4C4;
+}
+.dataTables_wrapper table tbody tr td .delete-icon-black {
+	color: #7C7C7C;
+}
+.dataTables_wrapper table tbody tr td .delete-icon-grey {
+	color: #DFDEDA;
+}

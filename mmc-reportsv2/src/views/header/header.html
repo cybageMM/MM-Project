@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>MediaMorph Classic</title>
     </head>
     <body>
-        <h1>HEADER 123</h1>
+        <div id="logo-header">
+			<div id="header-region"
+				class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a href="#login">
+							<div class="navbar-brand login-header__logo"></div>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="logoMenuDiv">
+						<ul id="navbar-links" class="nav navbar-nav navbar-right display-block">
+                            <li><a target="" href="javascript:void(0)"><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;<%- labelData.accounting_label %></a></li>
+                            <li><a target="" href="http://localhost/MMPROJECT/"><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;<%- labelData.reporting_label %></a></li>
+                            <li><a target="" href="javascript:void(0)"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;<%- labelData.contracts_label %></a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-user fa-fw"></i> &nbsp;&nbsp;<%- labelData.fullName %> <i class="caret"></i></a>
+                        		<ul class="dropdown-menu" role="menu">
+                        			<li><a href="http://localhost/MMLOGIN/#profile" id="myProfileLink"><i class="fa fa-user fa-fw"></i>&nbsp;<%- labelData.myProfile_label %></a></li>
+                        			<li><a href="http://localhost/MMLOGIN/#manage/password" id="managePasswordLink">&nbsp;<%- labelData.manage_password_label %></a></li>
+                        			<li class="divider"></li>
+                        			<li><a href="http://localhost/MMPROJECT/" id="logoutLink"><i class="fa fa-sign-out fa-fw"></i> <%- labelData.logout_label %></a></li>
+                        		</ul>
+                        	</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
     </body>
 </html>
